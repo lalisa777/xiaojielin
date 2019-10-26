@@ -3,7 +3,6 @@
    (https://youtu.be/I4MR6gxNNx8)
 
 ## Lab 3 - Hook up a motor
-
     (https://youtu.be/yWryBRTTn_c)
 
     The function of the diode:
