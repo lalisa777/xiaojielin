@@ -5,9 +5,7 @@
 ## Lab 3 - Hook up a motor
    (https://youtu.be/yWryBRTTn_c)
 
-    The function of the diode:
-
-    When stopping supplying energy to the motor,it will continue to spin, because it has inertia. When it’s spinning, it will generate a voltage in the opposite direction than the right current. This reverse voltage can damage transistor. So a diode in parallel with the motor, so that the back voltage will pass through the diode. The diode will only allow electric-ity to flow in one direction, protecting the rest of the circuit.
+The function of the diode: When stopping supplying energy to the motor,it will continue to spin, because it has inertia. When it’s spinning, it will generate a voltage in the opposite direction than the right current. This reverse voltage can damage transistor. So a diode in parallel with the motor, so that the back voltage will pass through the diode. The diode will only allow electric-ity to flow in one direction, protecting the rest of the circuit.
    
 
 *  PWM controls motor speed
