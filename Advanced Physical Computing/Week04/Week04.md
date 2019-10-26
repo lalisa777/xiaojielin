@@ -28,13 +28,13 @@
 
 ## Lab 4 - Hook up an MPR121
 
-     (https://youtu.be/pMJjyMg2_pU)
+    (https://youtu.be/pMJjyMg2_pU)
 
 ## Lab 5 - The Capsense library
 
-     (https://youtu.be/idGDGyNYviE)
+    (https://youtu.be/idGDGyNYviE)
 
-     (https://youtu.be/A5w-VU_OoF0)
+     https://youtu.be/A5w-VU_OoF0)
 
      
 
