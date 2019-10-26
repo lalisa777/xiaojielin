@@ -26,7 +26,7 @@ The function of the diode: When stopping supplying energy to the motor,it will c
    (https://www.youtube.com/watch?v=U_oEIhWSI8I)    
 
 ## Lab 5 - The Capsense library
-   (https://www.youtube.com/watch?v=wCsrIRXj27Y)   
+   (https://youtu.be/wCsrIRXj27Y)   
 
    (https://youtu.be/A5w-VU_OoF0) 
 
