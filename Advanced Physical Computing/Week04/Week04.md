@@ -23,7 +23,7 @@ The function of the diode: When stopping supplying energy to the motor,it will c
      On the contrary, the shorter the pulse width is, the smaller the duty cycle will be, so the smaller voltage will be provided to the motor, and the lower the motor speed is.
 
 ## Lab 4 - Hook up an MPR121
-   (https://www.youtube.com/watch?v=U_oEIhWSI8I)    
+   (https://youtu.be/U_oEIhWSI8I)    
 
 ## Lab 5 - The Capsense library
    (https://youtu.be/LygPcn73SnE)   
