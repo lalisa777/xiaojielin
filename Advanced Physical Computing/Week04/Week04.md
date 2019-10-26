@@ -1,10 +1,8 @@
 # Week 04 - Capacitors, Transistors and Motors
 ## Lab 2 - Hook up a servo
-
-    (https://youtu.be/I4MR6gxNNx8)
+   (https://youtu.be/I4MR6gxNNx8)
 
 ## Lab 3 - Hook up a motor
-
     (https://youtu.be/yWryBRTTn_c)
 
     The function of the diode:
@@ -27,11 +25,9 @@
      On the contrary, the shorter the pulse width is, the smaller the duty cycle will be, so the smaller voltage will be provided to the motor, and the lower the motor speed is.
 
 ## Lab 4 - Hook up an MPR121
-
     (https://youtu.be/pMJjyMg2_pU)
 
 ## Lab 5 - The Capsense library
-
     (https://youtu.be/idGDGyNYviE)
 
      https://youtu.be/A5w-VU_OoF0)
