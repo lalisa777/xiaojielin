@@ -5,9 +5,9 @@
 ## Lab 3 - Hook up a motor
    (https://youtu.be/yWryBRTTn_c)
 
-     The function of the diode:
+    The function of the diode:
 
-     When stopping supplying energy to the motor,it will continue to spin, because it has inertia. When it’s spinning, it will generate a voltage in the opposite direction than the right current. This reverse voltage can damage transistor. So a diode in parallel with the motor, so that the back voltage will pass through the diode. The diode will only allow electric-ity to flow in one direction, protecting the rest of the circuit.
+    When stopping supplying energy to the motor,it will continue to spin, because it has inertia. When it’s spinning, it will generate a voltage in the opposite direction than the right current. This reverse voltage can damage transistor. So a diode in parallel with the motor, so that the back voltage will pass through the diode. The diode will only allow electric-ity to flow in one direction, protecting the rest of the circuit.
    
 
 *  PWM controls motor speed
@@ -25,12 +25,12 @@
      On the contrary, the shorter the pulse width is, the smaller the duty cycle will be, so the smaller voltage will be provided to the motor, and the lower the motor speed is.
 
 ## Lab 4 - Hook up an MPR121
-    (https://youtu.be/pMJjyMg2_pU)    
+   (https://youtu.be/pMJjyMg2_pU)    
 
 ## Lab 5 - The Capsense library
-    (https://youtu.be/idGDGyNYviE)   
+   (https://youtu.be/idGDGyNYviE)   
 
-    (https://youtu.be/A5w-VU_OoF0) 
+   (https://youtu.be/A5w-VU_OoF0) 
 
      
 
