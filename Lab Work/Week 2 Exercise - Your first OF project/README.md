@@ -7,8 +7,8 @@ In this project, first of all, I changed all the colors in this painting into th
 
 The implementation of this project in openframeworks is actually very similar to that in mimic. The whole idea and process are the same, only the writing language is different. In the process, we use two sets of pixels:   
 
-*1. The set of RGB values of each pixel on the original image  
+1. The set of RGB values of each pixel on the original image  
 
-*2. The set of RGB values of each pixel on the image after changing
+2. The set of RGB values of each pixel on the image after changing
 
-By going throuth all the RGB values of the pixel points on the original imagen, these values are processed by certain rules (in this project, they are processed into opposite colors and displaying pixels according to the mouse control), and finally a new set of RGB values of the pixel points is formed and displayed on the canvas.  
+By going throuth all the RGB values of the pixel points on the original image, these values are processed by certain rules (in this project, they are processed into opposite colors and displaying pixels according to the mouse control), and finally a new set of RGB values of the pixel points is formed and displayed on the canvas.  
