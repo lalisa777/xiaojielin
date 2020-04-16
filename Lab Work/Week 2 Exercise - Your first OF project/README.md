@@ -11,4 +11,4 @@ The implementation of this project in openframeworks is actually very similar to
 
 2. The set of RGB values of each pixel on the image after changing
 
-By going throuth all the RGB values of the pixel points on the original image, these values are processed by certain rules (in this project, they are processed into opposite colors and displaying pixels according to the mouse control), and finally a new set of RGB values of the pixel points is formed and displayed on the canvas.  
+By going througth all the RGB values of the pixel points on the original image, these values are processed by certain rules (in this project, they are processed into opposite colors and displaying pixels according to the mouse control), and finally a new set of RGB values of the pixel points is formed and displayed on the canvas.  
