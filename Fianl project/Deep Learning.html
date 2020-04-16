@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Minimal portfolio template">
+	<meta name="author" content="layerz">
+
+	<title>Horet</title>
+
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="stylesheet" href="assets/css/assets.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700">
+</head>
+<body>
+	<header class="header">
+		<div class="inner clearfix">
+			<a href="index.html" class="main_logo float_left">
+				<img src="assets/img/logo.png" alt="" class="logo_dark">
+				<img src="assets/img/logo-white.png" alt="" class="logo_white">
+			</a>
+
+			<div class="trigger float_right zoom-cursor">
+				<span class="title">Menu</span>
+				<div class="icon">
+					<span class="icon_bar top"></span>
+					<span class="icon_bar middle"></span>
+					<span class="icon_bar bottom"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="main_nav">
+		<div class="menu_wrap">
+			<ul class="menu">
+					<li><a href="about.html">About</a></li>
+					<li><a href="Learning.html" class="active">Learning</a></li>
+					<li><a href="news.html">News</a></li>
+					<li>
+							<a href="#">Contact</a>
+							<ul>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="have-a-question.html">Have a question</a></li>
+							</ul>
+					</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="headline">
+		<div class="container">
+			<h6 class="reveal_content">
+				<span class="reveal">Recommendation Engine</span>
+			</h6>
+
+			<h1 class="reveal_content">
+				<span class="reveal">Deep Learning</span>
+			</h1>
+		</div>
+	</div>
+
+
+	<div class="project">
+		<div class="container">
+			<figure class="reveal_content">
+				<div class="reveal">
+					<img src="assets/img/learning/resouce/01.jpg" alt="" class="responsive">
+				</div>
+			</figure>
+
+			<div class="gap_l"></div>
+
+			<div class="row">
+				<div class="column col-8 offset-2">
+					<h3 class="reveal_content">
+						<span class="reveal">The Math</span>
+					</h3>
+					<p class="reveal_content"><span class="reveal">The idea of using deep learning is similar to that of Model-Based Matrix Factorization. In matrix factorization, we decompose our original sparse matrix into product of 2 low rank orthogonal matrices. For deep learning implementation, we don’t need them to be orthogonal, we want our model to learn the values of embedding matrix itself. The user latent features and movie latent features are looked up from the embedding matrices for specific movie-user combination. These are the input values for further linear and non-linear layers. We can pass this input to multiple relu, linear or sigmoid layers and learn the corresponding weights by any optimization algorithm (Adam, SGD, etc.).</span></p>
+
+					<hr>
+
+					<h3 class="reveal_content">
+						<span class="reveal">The Code</span>
+					</h3>
+					<p class="reveal_content"><span class="reveal">Here are the main components of my neural network:</span></p>
+					<h6 class="reveal_content"> <span class="reveal">A left embedding layer that creates a Users by Latent Factors matrix.</span></p>
+					<h6 class="reveal_content">  <span class="reveal">A right embedding layer that creates a Movies by Latent Factors matrix.</span></p>
+					<h6 class="reveal_content"> <span class="reveal">When the input to these layers are (i) a user id and (ii) a movie id, they’ll return the latent factor vectors for the user and the movie, respectively.</span></p>
+					<h6 class="reveal_content"> <span class="reveal">A merge layer that takes the dot product of these two latent vectors to return the predicted rating.</span></p>
+				</div>
+			</div>
+
+			<!--<div class="color_palette">
+				<h4>Primary colors</h4>
+
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#becada"></div>
+					<span class="palette_text">#becada</span>
+				</div>
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#c3a59d"></div>
+					<span class="palette_text">#c3a59d</span>
+				</div>
+			</div>-->
+
+
+			<div class="slider owl-carousel" data-items="1" data-arrows="true" data-dots="false">
+				<div class="item"><img src="assets/img/learning/resouce/02.jpg" alt=""></div>
+				<div class="item"><img src="assets/img/learning/resouce/03.jpg" alt=""></div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="copy float_left">
+					<p>&copy; FAI Platform. 2020. made by <a href="https://themeforest.net/user/layerz" target="_blank" class="link">XIAOJIE</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div class="loader-mask">
+		<div class="loader"></div>
+	</div>
+	<div class="cursor"></div>
+	<div class="back2top zoom-cursor">
+		<span></span>
+	</div>
+
+
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

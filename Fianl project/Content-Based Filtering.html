@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Minimal portfolio template">
+	<meta name="author" content="layerz">
+
+	<title>Horet</title>
+
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="stylesheet" href="assets/css/assets.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700">
+</head>
+<body>
+	<header class="header">
+		<div class="inner clearfix">
+			<a href="index.html" class="main_logo float_left">
+				<img src="assets/img/logo.png" alt="" class="logo_dark">
+				<img src="assets/img/logo-white.png" alt="" class="logo_white">
+			</a>
+
+			<div class="trigger float_right zoom-cursor">
+				<span class="title">Menu</span>
+				<div class="icon">
+					<span class="icon_bar top"></span>
+					<span class="icon_bar middle"></span>
+					<span class="icon_bar bottom"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="main_nav">
+		<div class="menu_wrap">
+			<ul class="menu">
+					<li><a href="about.html">About</a></li>
+					<li><a href="Learning.html" class="active">Learning</a></li>
+					<li><a href="news.html">News</a></li>
+					<li>
+							<a href="#">Contact</a>
+							<ul>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="have-a-question.html">Have a question</a></li>
+							</ul>
+					</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="headline">
+		<div class="container">
+			<h6 class="reveal_content">
+				<span class="reveal">Recommendation Engine</span>
+			</h6>
+
+			<h1 class="reveal_content">
+				<span class="reveal">Content-Based Filtering</span>
+			</h1>
+		</div>
+	</div>
+
+
+	<div class="project">
+		<div class="container">
+			<figure class="reveal_content">
+                <h6 class="reveal_content">
+						<span class="reveal">The Content-Based Recommender relies on the similarity of the items being recommended. The basic idea is that if you like an item, then you will also like a “similar” item. It generally works well when it’s easy to determine the context/properties of each item.</span>
+                </h6>    
+                <h6 class="reveal_content">   
+                        <span class="reveal">A content based recommender works with data that the user provides, either explicitly movie ratings for the MovieLens dataset. Based on that data, a user profile is generated, which is then used to make suggestions to the user. As the user provides more inputs or takes actions on the recommendations, the engine becomes more and more accurate.</span>
+                </h6>  
+                <hr>  
+            </div>  
+			</figure>
+
+            <div class="gap_l"></div>
+
+			<div class="row">
+				<div class="column col-8 offset-2">
+					<h3 class="reveal_content">
+						<span class="reveal">The Math</span>
+					</h3>
+                    <p class="reveal_content"><span class="reveal">The concepts of Term Frequency (TF) and Inverse Document Frequency (IDF) are used in information retrieval systems and also content based filtering mechanisms (such as a content based recommender). They are used to determine the relative importance of a document / article / news item / movie etc.</span></p> 
+                    <p class="reveal_content"><span class="reveal">TF is simply the frequency of a word in a document. IDF is the inverse of the document frequency among the whole corpus of documents. TF-IDF is used mainly because of two reasons: Suppose we search for “the results of latest European Socccer games” on Google. It is certain that “the” will occur more frequently than “soccer games” but the relative importance of soccer gamesis higher than the search query point of view. In such cases, TF-IDF weighting negates the effect of high frequency words in determining the importance of an item (document).</span></p> 
+                    <p class="reveal_content"><span class="reveal">Below is the equation to calculate the TF-IDF score:</span></p> 
+                    <div class="reveal">
+                            <img src="assets/img/learning/resouce/11.jpg" alt="" class="responsive">
+                        </div>
+                     <div class="gap_l"></div>
+                     <p class="reveal_content"><span class="reveal">After calculating TF-IDF scores, how do we determine which items are closer to each other, rather closer to the user profile? This is accomplished using the Vector Space Model which computes the proximity based on the angle between the vectors. In this model, each item is stored as a vector of its attributes (which are also vectors) in an n-dimensional space and the angles between the vectors are calculated to determine the similarity between the vectors. Next, the user profile vectors are also created based on his actions on previous attributes of items and the similarity between an item and a user is also determined in a similar way.</span></p> 
+                     <div class="reveal">
+                            <img src="assets/img/learning/resouce/12.jpg" alt="" class="responsive">
+                        </div>
+                     <div class="gap_l"></div>
+                     <p class="reveal_content"><span class="reveal">Sentence 2 is more likely to be using Term 2 than using Term 1. Vice-versa for Sentence 1. The method of calculating this relative measure is calculated by taking the cosine of the angle between the sentences and the terms. The ultimate reason behind using cosine is that the value of cosine will increase with decreasing value of the angle between which signifies more similarity. The vectors are length normalized after which they become vectors of length 1 and then the cosine calculation is simply the sum-product of vectors.</span></p> 
+                    <hr> 
+					<h3 class="reveal_content">
+                        <span class="reveal">The Code</span>
+					</h3>
+                </div>
+			</div>
+
+			<!--<div class="color_palette">
+				<h4>Primary colors</h4>
+
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#becada"></div>
+					<span class="palette_text">#becada</span>
+				</div>
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#c3a59d"></div>
+					<span class="palette_text">#c3a59d</span>
+				</div>
+			</div>-->
+
+
+			<div class="slider owl-carousel" data-items="1" data-arrows="true" data-dots="false">
+				<div class="item"><img src="assets/img/learning/resouce/13.jpg" alt=""></div>
+				<div class="item"><img src="assets/img/learning/resouce/14.jpg" alt=""></div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="copy float_left">
+					<p>&copy; FAI Platform. 2020. made by <a href="https://themeforest.net/user/layerz" target="_blank" class="link">XIAOJIE</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div class="loader-mask">
+		<div class="loader"></div>
+	</div>
+	<div class="cursor"></div>
+	<div class="back2top zoom-cursor">
+		<span></span>
+	</div>
+
+
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Minimal portfolio template">
+	<meta name="author" content="layerz">
+
+	<title>Horet</title>
+
+	<link rel="icon" href="assets/img/favicon.png">
+	<link rel="stylesheet" href="assets/css/assets.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:400,700">
+</head>
+<body>
+	<header class="header">
+		<div class="inner clearfix">
+			<a href="index.html" class="main_logo float_left">
+				<img src="assets/img/logo.png" alt="" class="logo_dark">
+				<img src="assets/img/logo-white.png" alt="" class="logo_white">
+			</a>
+
+			<div class="trigger float_right zoom-cursor">
+				<span class="title">Menu</span>
+				<div class="icon">
+					<span class="icon_bar top"></span>
+					<span class="icon_bar middle"></span>
+					<span class="icon_bar bottom"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<nav class="main_nav">
+		<div class="menu_wrap">
+			<ul class="menu">
+					<li><a href="about.html">About</a></li>
+					<li><a href="Learning.html" class="active">Learning</a></li>
+					<li><a href="news.html">News</a></li>
+					<li>
+							<a href="#">Contact</a>
+							<ul>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="have-a-question.html">Have a question</a></li>
+							</ul>
+					</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="headline">
+		<div class="container">
+			<h6 class="reveal_content">
+				<span class="reveal">Recommendation Engine</span>
+			</h6>
+
+			<h1 class="reveal_content">
+				<span class="reveal">Matrix Factorization</span>
+			</h1>
+		</div>
+	</div>
+
+
+	<div class="project">
+		<div class="container">
+			<figure class="reveal_content">
+				<div class="reveal">
+					<img src="assets/img/learning/resouce/04.jpg" alt="" class="responsive">
+                </div>
+
+                <div class="gap_l"></div>
+
+                <h6 class="reveal_content">
+						<span class="reveal">It doesn’t scale particularly well to massive datasets, especially for real-time recommendations based on user behavior similarities — which takes a lot of computations.</span>
+                </h6>    
+                
+                <h6 class="reveal_content">   
+                        <span class="reveal">Ratings matrices may be overfitting to noisy representations of user tastes and preferences. When we use distance based “neighborhood” approaches on raw data, we match to sparse low-level details that we assume represent the user’s preference vector instead of the vector itself.</span>
+                </h6> 
+                <h3 class="reveal_content">
+                        <span class="reveal">Why reduce dimensions?</span>
+                    </h3>
+                    <h6 class="reveal_content">
+                            <span class="reveal">Discover hidden correlations / features in the raw data.</span>
+                    </h6>    
+                    <h6 class="reveal_content">
+                            <span class="reveal">Remove redundant and noisy features that are not useful.</span>
+                    </h6>    
+                    <h6 class="reveal_content">
+                            <span class="reveal">Interpret and visualize the data easier.</span>
+                    </h6>    
+                    <h6 class="reveal_content">
+                            <span class="reveal">Access easier data storage and processing.</span>
+                    </h6> 
+                    <hr>  
+            </div>  
+			</figure>
+
+            <div class="gap_l"></div>
+
+			<div class="row">
+				<div class="column col-8 offset-2">
+					<h3 class="reveal_content">
+						<span class="reveal">The Math</span>
+					</h3>
+                    <p class="reveal_content"><span class="reveal">Model-based Collaborative Filtering is based on matrix factorization (MF)which has received greater exposure, mainly as an unsupervised learning method for latent variable decomposition and dimensionality reduction. Matrix factorization is widely used for recommender systems where it can deal better with scalability and sparsity than Memory-based CF:</span></p>
+                    <h6 class="reveal_content">
+                            <span class="reveal">The goal of MF is to learn the latent preferences of users and the latent attributes of items from known ratings (learn features that describe the characteristics of ratings) to then predict the unknown ratings through the dot product of the latent features of users and items.</span>
+                    </h6>  
+                    <h6 class="reveal_content">
+                            <span class="reveal">When you have a very sparse matrix, with a lot of dimensions, by doing matrix factorization, you can restructure the user-item matrix into low-rank structure, and you can represent the matrix by the multiplication of two low-rank matrices, where the rows contain the latent vector.</span>
+                    </h6>  
+                    <h6 class="reveal_content">
+                            <span class="reveal">You fit this matrix to approximate your original matrix, as closely as possible, by multiplying the low-rank matrices together, which fills in the entries missing in the original matrix.</span>
+                    </h6>  
+                    <p class="reveal_content"><span class="reveal">A well-known matrix factorization method is Singular value decomposition (SVD). At a high level, SVD is an algorithm that decomposes a matrix A into the best lower rank (i.e. smaller/simpler) approximation of the original matrix A. Mathematically, it decomposes A into a two unitary matrices and a diagonal matrix:</span></p>
+                    <div class="gap_l"></div>
+                    <div class="reveal">
+                            <img src="assets/img/learning/resouce/05.jpg" alt="" class="responsive">
+                        </div> 
+                        <div class="gap_l"></div>
+                        <p class="reveal_content"><span class="reveal">where A is the input data matrix (users’s ratings), U is the left singular vectors (user “features” matrix), Sum is the diagonal matrix of singular values (essentially weights/strengths of each concept), and V^T is the right singular vectors (movie “features” matrix). U and V^T are column orthonormal, and represent different things: U represents how much users “like” each feature and V^T represents how relevant each feature is to each movie.</span></p>
+                        <p class="reveal_content"><span class="reveal">To get the lower rank approximation, I take these matrices and keep only the top k features, which can be thought of as the underlying tastes and preferences vectors.</span></p>
+                    <hr>
+
+					<h3 class="reveal_content">
+						<span class="reveal">The Code</span>
+					</h3>
+                </div>
+			</div>
+
+			<!--<div class="color_palette">
+				<h4>Primary colors</h4>
+
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#becada"></div>
+					<span class="palette_text">#becada</span>
+				</div>
+				<div class="palette_block">
+					<div class="palette_color" data-bg-color="#c3a59d"></div>
+					<span class="palette_text">#c3a59d</span>
+				</div>
+			</div>-->
+
+
+			<div class="slider owl-carousel" data-items="1" data-arrows="true" data-dots="false">
+				<div class="item"><img src="assets/img/learning/resouce/06.jpg" alt=""></div>
+				<div class="item"><img src="assets/img/learning/resouce/07.jpg" alt=""></div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="copy float_left">
+					<p>&copy; FAI Platform. 2020. made by <a href="https://themeforest.net/user/layerz" target="_blank" class="link">XIAOJIE</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- loader -->
+	<div class="loader-mask">
+		<div class="loader"></div>
+	</div>
+	<div class="cursor"></div>
+	<div class="back2top zoom-cursor">
+		<span></span>
+	</div>
+
+
+	<script src="assets/js/jquery-3.1.0.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
